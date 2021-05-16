@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ExtraParamCell" id="Nkf-FD-Bbr" customClass="ExtraParamCell" customModule="SampleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nkf-FD-Bbr" id="yMQ-PF-Aec">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PZL-VN-kIc">
+                        <rect key="frame" x="8" y="17.5" width="130" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="wgd-XG-IFn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="darkTextColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzK-MX-KIs">
+                        <rect key="frame" x="146" y="8" width="166" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="PZL-VN-kIc" firstAttribute="leading" secondItem="Nkf-FD-Bbr" secondAttribute="leading" constant="8" id="Fh4-LL-O5E"/>
+                <constraint firstItem="qzK-MX-KIs" firstAttribute="leading" secondItem="PZL-VN-kIc" secondAttribute="trailing" constant="8" symbolic="YES" id="Yvr-P3-SHf"/>
+                <constraint firstAttribute="trailing" secondItem="qzK-MX-KIs" secondAttribute="trailing" constant="8" id="anW-mZ-PlM"/>
+                <constraint firstItem="qzK-MX-KIs" firstAttribute="baseline" secondItem="PZL-VN-kIc" secondAttribute="baseline" constant="-1" id="hoG-em-hyg"/>
+                <constraint firstItem="qzK-MX-KIs" firstAttribute="top" secondItem="Nkf-FD-Bbr" secondAttribute="top" constant="8" id="xyp-LW-wqx"/>
+            </constraints>
+            <connections>
+                <outlet property="textField" destination="qzK-MX-KIs" id="KJ6-QL-05f"/>
+                <outlet property="titleLabel" destination="PZL-VN-kIc" id="2uZ-x9-Nb9"/>
+            </connections>
+            <point key="canvasLocation" x="-26" y="106"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
