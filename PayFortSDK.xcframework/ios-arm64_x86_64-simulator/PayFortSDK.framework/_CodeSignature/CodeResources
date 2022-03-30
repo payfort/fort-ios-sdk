@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Q6/HnXQ8PWC+cANtWrFfmw7EAts=
+		qp+vgnj2ODjVUCBDJQF01WN5VSk=
 		</data>
 		<key>CVCNumberView.nib</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/G2YK2DAFdYp9CKdqlfBsv/9N48=
+		8z0GnyNXrnGyE6gQ2yjDdgtA0os=
 		</data>
 		<key>LoadingView.nib</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Nqo9MTjxNCmFLRV+N4zjc5sAdzw=
+		ztIf/7nuxX0lOMsHFhyexXy6cGU=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Nqo9MTjxNCmFLRV+N4zjc5sAdzw=
+		ztIf/7nuxX0lOMsHFhyexXy6cGU=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZkStAcDiWDAJFxVav8ok5USwewo=
+		rCVI8DdLH/2lSrYpX6mnZ15QUq8=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ZkStAcDiWDAJFxVav8ok5USwewo=
+		rCVI8DdLH/2lSrYpX6mnZ15QUq8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cNXi7rU3PAKnHvDAWpblo2BDvIJqkGwSKj6J93Z4EMQ=
+			SO0tgTJu+pwUBMpOFDrSls+rI3utOZDt8+d7CQ70N3k=
 			</data>
 		</dict>
 		<key>CVCNumberView.nib</key>
@@ -218,7 +218,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fH3zQvJgW86CA/JKHudwDaHyPZBOdJFBvz+ZCol0Q9A=
+			HHWh/nxtrEL93drElsLQ3C8iAmLAKdQ1doATF+K5z+k=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftdoc</key>
@@ -239,7 +239,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fH3zQvJgW86CA/JKHudwDaHyPZBOdJFBvz+ZCol0Q9A=
+			HHWh/nxtrEL93drElsLQ3C8iAmLAKdQ1doATF+K5z+k=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -260,7 +260,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dHAJukDf5OmagcJeq3XJJviEwUvPiO2OC15nzu8fN5M=
+			j3A5kBhjzrHOgIcVigLz07xaz8ut3vUjZjY5Wqh6hjo=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -281,7 +281,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dHAJukDf5OmagcJeq3XJJviEwUvPiO2OC15nzu8fN5M=
+			j3A5kBhjzrHOgIcVigLz07xaz8ut3vUjZjY5Wqh6hjo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
