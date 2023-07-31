@@ -9,8 +9,10 @@ The FORT Mobile SDK allows Merchants to securely integrate the payment functions
 In order to start using FORT iOS SDK you need to have an account on the FORT , please click here to follow the installation instructions using the link [below](https://github.com/payfort/fort-ios-sdk/wiki)
 
 
-## Before you start the integration
 
+
+<details>
+<summary> Before you start the integration</summary>	
 Read through the following steps first to understand how the integration
 process works. This will help you to understand why these steps are
 required and why you need to follow a specific sequence.
@@ -73,6 +75,9 @@ settings.
 You can use our test card numbers to test your integration and simulate
 your test cases. The Amazon Payment Services team may need to test your
 integration before going live to assure your application integration.
+
+	
+</details>
 
 
 # Installing the Mobile SDK
@@ -150,9 +155,8 @@ These are the steps you need to follow to perform a checkout using our
 standard UI. See the next section for building your own customized
 payment UI. For detiled implementaion on the standard checkout implementation refer [here](https://github.com/payfort/fort-ios-sdk/wiki#customizing-the-standard-payment-ui)
 
-1- **Import the framework into your app**
-    
-    Start by importing the Amazon Payment Service iOS SDK library. You
+<details><summary>Import the framework into your app</summary>
+ Start by importing the Amazon Payment Service iOS SDK library. You
     do so by using the following code:
     
 **Objective-C**
@@ -171,12 +175,12 @@ payment UI. For detiled implementaion on the standard checkout implementation re
   
 ```
 
-2- **Initialize the controllers**
-
-    Initialize **PayFortController** within the targeted environment.
-    You set the target environment by setting one of the two ENUM,
-    either **PayFortEnviromentSandBox** or
-    **PayFortEnviromentProduction**
+</details>
+    
+<details><summary>Initialize the controllers</summary>
+Initialize **PayFortController** within the targeted environment.
+You set the target environment by setting one of the two ENUM,
+either **PayFortEnviromentSandBox** or **PayFortEnviromentProduction**
     
 **Objective-C**
 
@@ -195,9 +199,10 @@ payment UI. For detiled implementaion on the standard checkout implementation re
   
 ```
 
-3-   **Preparing Request Parameters**
-    
-    Set a dictionary that contains all keys and values for the SDK
+</details>
+
+ <details><summary>Preparing Request Parameter</summary>
+  Set a dictionary that contains all keys and values for the SDK
 
  **Objective-C**
 
@@ -236,9 +241,11 @@ let request = ["amount" : "1000",
 
 </br>
 
-4 . **Response callback function**
+ </details>  
 
-Amazon Payment Services allows you retrieve and receive the response
+    
+ <details><summary>Response callback function</summary>
+ Amazon Payment Services allows you retrieve and receive the response
 parameters after processing a transaction once the transaction is
 completed. It only happens during the installation process. This is
 the code you need to use:
@@ -276,6 +283,9 @@ payFort.callPayFort(withRequest: request, currentViewController: self, success: 
 
 
 ```
+</details>  
+
+
 
 ## Complete sample code for standard UI checkout:
 
@@ -283,8 +293,8 @@ The following sample code shows you how to process a payment using the
 standard view. The code sample illustrates how you send a request
 operation in the mobile SDK.
 
-**Objective-C**
-
+<details><summary>Objective-C</summary>
+	
 ```
 
 
@@ -312,8 +322,11 @@ NSMutableDictionary *requestDictionary = [[NSMutableDictionary alloc]init];
 
 
 ```
+</details>
 
-**Swift**
+
+<details><summary>Swift</summary>
+
 
 ```
 
@@ -347,6 +360,8 @@ payFort.callPayFort(withRequest: request, currentViewController: self,
 
 
 ```
+</details>
+
 ### Customizing the standard payment UI
 When you use the standard payment UI you can customize the payment UI
 presented by our iOS SDK in a number of ways to better reflect your
@@ -363,11 +378,9 @@ Follow these steps to configure a customized payment UI:
 1.  Create your nibFile .xib and set the name of Arabic xib same name
     with English one with suffix -ar.
 
-2.  Link the xib with PayFortView and bind all the IBOutlets in
-    interface section IBOutlet UILabel \*titleLbl;
+2.  Link the xib with PayFortView and bind all the IBOutlets in interface section IBOutlet UILabel \*titleLbl; 
 
-```
-
+ ```
 IBOutlet UIButton *BackBtn;
 IBOutlet UILabel *PriceLbl;
 IBOutlet JVFloatLabeledTextField *CardNameTxt; 
@@ -381,18 +394,18 @@ IBOutlet UISwitch *savedCardSwitch;
 IBOutlet UIButton *paymentBtn;
 IBOutlet UILabel *saveCardLbl;
 IBOutlet UIImageView *imageCard;
-
-
 ```
+
+
+
 
 3.  Assign new created xib file to Amazon Payment Services controller.
 
 ```
-
-
 [payFort setPayFortCustomViewNib:@\"PayFortView2\"\];
-
 ```
+
+
 
 
 **[NOTE]. If you call Arabic view and the Arabic view not existed
@@ -429,12 +442,9 @@ components included in the Amazon Payment Services iOS SDK:
 **Components Views**
 
 Item property, all these properties are available for each component.
-
-**Swift**
-
+<details><summary>Swift</summary>
+	
 ```
-
-
 let property = Property()
         property.textColor
         property.fontStyle
@@ -444,78 +454,59 @@ let property = Property()
         property.titleTextColor
         property.titleErrorTextColor
         property.titleFontStyle
+```
+</details>
 
+<details><summary>Objective-c</summary>
 
 ```
-
-**Objective-c**
-
-```
-
-
 Property *property = [[Property alloc] init]
-        property.textColor
-        property.fontStyle
-        property.backgroundColor
-        property.errorFontStyle
-        property.errorTextColor
-        property.titleTextColor
-        property.titleErrorTextColor
-        property.titleFontStyle
-
-
+property.textColor
+property.fontStyle
+property.backgroundColor
+property.errorFontStyle
+property.errorTextColor
+property.titleTextColor
+property.titleErrorTextColor
+property.titleFontStyle
 ```
+</details>
 
-1.  **CardNumberView:**
-
-The **CardNumberView** inheritance from UIView, **CardNumberView is**
-used to validate the card number, card brand and card number length.
+<details><summary>CardNumberView</summary>
+	
+The **CardNumberView** inheritance from UIView, **CardNumberView is** used to validate the card number, card brand and card number length.
 
 **Swift**
 ```
-
-
-@IBOutlet private weak var cardNumberView: CardNumberView!
+	@IBOutlet private weak var cardNumberView: CardNumberView!
 cardNumberView.property = property
-
-
 ```
+
 **Objective-c**
 ```
-
-
 @property (nonatomic, weak) IBOutlet CardNumberView *cardNumberView;
 cardNumberView.property = property
-
-
 ```
-2.  **ExpiryDateView**:
+</details>
 
-The **ExpiryDateView** inheritance from UIView, **ExpiryDateView** is
-used to check the expiry date for the credit card.
+
+<details><summary>ExpiryDateView</summary>
+The **ExpiryDateView** inheritance from UIView, **ExpiryDateView** is used to check the expiry date for the credit card.
 
 **Swift**
 ```
-
-
 @IBOutlet private weak var expiryDateView: ExpiryDateView!
      expiryDateView.property = property
-
-
 ```
 **Objective-c**
 ```
-
-
 @property (nonatomic, weak) IBOutlet ExpiryDateView *expiryDateView;
      expiryDateView.property = property
-
-
 ```
-3.  **CVCNumberView**
+</details>
 
-The **CVCNumberView** inheritance from UIView, **CVCNumberView** used
-to check if cvc matches cardBrad.
+<details><summary>CVCNumberView</summary>
+The **CVCNumberView** inheritance from UIView, **CVCNumberView** used to check if cvc matches cardBrad.
 
 **Swift**
 ```
@@ -535,8 +526,10 @@ to check if cvc matches cardBrad.
 
 
 ```
-4.  **HolderNameView**
+</details>
 
+
+<details><summary>HolderNameView</summary>
 The **HolderNameView** inheritance from UIView, **HolderNameView** is
 used to fill the card holder name.
 
@@ -558,9 +551,11 @@ used to fill the card holder name.
 
 
 ```
-5.  **ErrorLabel**
 
- It will show any error message for owner card view, you can set your
+</details>
+
+<details><summary>ErrorLabel</summary>
+It will show any error message for owner card view, you can set your
  custom UILabel, Example:
 
  **Swift**
@@ -581,9 +576,9 @@ used to fill the card holder name.
 
 
 ```
-</br>
 
-**Example of components views in Objective-C and Swift**
+</details>
+<details><summary>Example of components views in Objective-C and Swift</summary>
 
 This is one example of how to customize the component:
 
@@ -613,43 +608,36 @@ Property * property = [[Property alloc] init];
 
 
 ```
+
+</details>
+ 
+
+
 ###  Stage 3: Initiate the payment
 
-
-**PayButton**
-
+<details><summary>PayButton</summary>
 Used to collect the card data from card components above and to submit
 successful payment. With a few simple steps it also has the capability
 to perform Direct Pay without the need for the card component, see the
 next section.
+</details>
 
-**PayfortPayButton methods**
-```
-
-
-/**
-     Update Request After doing Setup
-     - Parameter request: a new request dictionary
-     */
-    public func updateRequest(request: [String: String])
-    
- /**
-     Responsible for Save token or not
-     - Parameter enabled: a new bool value
-     */
-    public func isRememberEnabled(_ enabled: Bool)
-
+<details><summary>PayfortPayButton methods</summary>
 
 ```
+/**Update Request After doing Setup - Parameter request: a new request dictionary*/
+public func updateRequest(request: [String: String]) 
+/**Responsible for Save token or not - Parameter enabled: a new bool value */
+public func isRememberEnabled(_ enabled: Bool)
+```
+</details>
+
+
 ### Sample code
+In this section we illustrate how you use the PayButton using sample code for Swift and Objective-C.
+<details><summary>Swift</summary>
 
-In this section we illustrate how you use the PayButton using sample
-code for Swift and Objective-C.
-
-**Swift**
 ```
-
-
 @IBOutlet weak var payButton: PayButton!
     
     let builder = PayComponents(cardNumberView: cardNumberView, expiryDateView: expiryDateView, cvcNumberView: cvcNumberView, holderNameView: holderNameView, rememberMe: saveCardSwitch.isOn)
@@ -661,13 +649,12 @@ code for Swift and Objective-C.
     } faild: { (requestDic, responeDic, message) in
     // Process faild
     }
+```
+</details>
 
+<details><summary>Objective-C</summary>
 
 ```
-**Objective-C**
-```
-
-
 @property (nonatomic, weak) IBOutlet PayButton *payButton;
     
     PayComponents *builder = [[PayComponents alloc] initWithCardNumberView:cardNumberView expiryDateView: expiryDateView cvcNumberView: cvcNumberView, holderNameView: holderNameView rememberMe: saveCardSwitch.on];
@@ -681,7 +668,9 @@ code for Swift and Objective-C.
     } Faild:^(NSDictionary *requestDic, NSDictionary *responeDic, NSString *message) {
     }];
 
-
 ```
+</details>
+
+
 
 For more information about Custom Checkout implementation refer [here](https://github.com/payfort/fort-ios-sdk/wiki#using-a-custom-payment-processing-ui)
