@@ -123,7 +123,7 @@ curl -H "Content-Type: application/json" -d
 https://sbpaymentservices.payfort.com/FortAPI/paymentApi
 
 ```
-
+For more information about SDk token refer [here](https://github.com/payfort/fort-ios-sdk/wiki#creating-a-mobile-sdk-token)
 # Processing transactions with the iOS SDK
 As a merchant you have two ways in which you can process payments using
 the Amazon Payment Services iOS mobile SDK.
@@ -148,7 +148,7 @@ the Amazon Payment Services iOS mobile SDK.
 
 These are the steps you need to follow to perform a checkout using our
 standard UI. See the next section for building your own customized
-payment UI.
+payment UI. For detiled implementaion on the standard checkout implementation refer [here](https://github.com/payfort/fort-ios-sdk/wiki#customizing-the-standard-payment-ui)
 
 1- **Import the framework into your app**
     
@@ -276,7 +276,7 @@ payFort.callPayFort(withRequest: request, currentViewController: self, success: 
 
 
 ```
-## Complete sample code for standard UI checkout
+
 ## Complete sample code for standard UI checkout:
 
 The following sample code shows you how to process a payment using the
@@ -355,9 +355,6 @@ business. We outline your options below.
 ### Customizing the standard payment UI
 
 You can customize the standard payment user interface in your iOS app.
-This is an example of a customized payment UI:
-
-![iOS payment layout](images/ios-mobile-SDK-Payment-Layout.png)
 
 Standard vs. Customized Mobile SDK Payment Page
 
@@ -402,52 +399,7 @@ IBOutlet UIImageView *imageCard;
 the application will crash.\
 Don't forget to set the custom view field in the identity inspector**
 
-### Hiding the Amazon Payment Service loading prompt
 
-There is an option to hide the loading prompt when the iOS SDK
-initializes the connection request. You can disable the loading prompt
-by using following option:
-
-
-**Objective-C**
-
-```
-
-  
-payFort.hideLoading = YES;
-
-```
-
-**Swift**
-```
-
-  
- payFort.hideLoading = true
-
-```
-
-  
-
-### Changing the presentation style
-
-It's easy to change the presentation style from full screen to default
-by using the following property:
-
-**Objective-C**
-```
-
-  
-payFort.presentAsDefault  = YES;
-
- ``` 
-
-**Swift**
-```  
-
-  
- payFort.presentAsDefault  = true
-
-```  
 # Using a custom payment processing UI
 In this section we outline the key information you need to create your
 own payment processing screen using the tools in the iOS SDK.
@@ -731,5 +683,5 @@ code for Swift and Objective-C.
 
 
 ```
-## Stage 3: Initiate the payment
-### Sample code
+
+For more information about Custom Checkout implementation refer [here](https://github.com/payfort/fort-ios-sdk/wiki#using-a-custom-payment-processing-ui)
