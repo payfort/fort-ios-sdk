@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -260,21 +260,21 @@
             </constraints>
             <connections>
                 <outlet property="BackBtn" destination="Dy8-6z-vg3" id="9Rb-mx-vct"/>
-                <outlet property="CVCNumberTxt" destination="20f-SL-euE" id="glS-t5-GWq"/>
-                <outlet property="CardNameTxt" destination="tzA-5E-Nkk" id="cWJ-U4-VFg"/>
-                <outlet property="CardNumberTxt" destination="7ci-r8-Erm" id="MgB-Ag-adE"/>
-                <outlet property="ExpDateTxt" destination="RmX-VT-Nnv" id="CdX-bD-R6c"/>
-                <outlet property="PriceLbl" destination="xrZ-38-1fB" id="UYb-9n-3AV"/>
-                <outlet property="SaveCardView" destination="dXG-i2-9a4" id="ig5-oh-BNv"/>
-                <outlet property="cVCNumberErrorlbl" destination="KZA-YK-yJv" id="1ab-rQ-4DQ"/>
-                <outlet property="cardNumberErrorlbl" destination="IVy-L8-HUO" id="rcC-od-ukh"/>
-                <outlet property="expDateErrorlbl" destination="eDQ-G3-hgK" id="Rlr-6x-FcZ"/>
-                <outlet property="headerHeight" destination="25r-Fg-cd4" id="6D3-aG-IyU"/>
-                <outlet property="imageCard" destination="Puy-QG-5ah" id="UEC-q2-Mit"/>
-                <outlet property="paymentBtn" destination="XnZ-SZ-Q5h" id="3g1-Xf-ggp"/>
+                <outlet property="CVCNumberTxt" destination="20f-SL-euE" id="tvt-9x-LwQ"/>
+                <outlet property="CardNameTxt" destination="tzA-5E-Nkk" id="0XW-nj-Nv8"/>
+                <outlet property="CardNumberTxt" destination="7ci-r8-Erm" id="ji6-I0-haw"/>
+                <outlet property="ExpDateTxt" destination="RmX-VT-Nnv" id="2Z2-e3-0G8"/>
+                <outlet property="PriceLbl" destination="xrZ-38-1fB" id="UE1-JF-PoW"/>
+                <outlet property="SaveCardView" destination="dXG-i2-9a4" id="bIO-kV-p5t"/>
+                <outlet property="cVCNumberErrorlbl" destination="KZA-YK-yJv" id="ica-RY-Qez"/>
+                <outlet property="cardNumberErrorlbl" destination="IVy-L8-HUO" id="gw0-CJ-fQg"/>
+                <outlet property="expDateErrorlbl" destination="eDQ-G3-hgK" id="uqe-lo-XHe"/>
+                <outlet property="headerHeight" destination="25r-Fg-cd4" id="TZq-YW-VYQ"/>
+                <outlet property="imageCard" destination="Puy-QG-5ah" id="ce1-aS-7vV"/>
+                <outlet property="paymentBtn" destination="XnZ-SZ-Q5h" id="Pdd-GA-dVd"/>
                 <outlet property="saveCardLbl" destination="GnL-hP-8re" id="OM6-KB-oKa"/>
                 <outlet property="savedCardSwitch" destination="8Ba-VT-IFE" id="oeb-Xt-5mE"/>
-                <outlet property="titleLbl" destination="ecx-Q5-7pf" id="lwc-7e-YzQ"/>
+                <outlet property="titleLbl" destination="ecx-Q5-7pf" id="njj-p8-s4p"/>
                 <outlet property="titleView" destination="O4R-8Y-exa" id="Vre-US-83F"/>
             </connections>
             <point key="canvasLocation" x="-288" y="50"/>

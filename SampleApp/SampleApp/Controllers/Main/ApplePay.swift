@@ -25,7 +25,7 @@ extension MainViewController {
                 request.applicationData = data
             }
             request.supportedNetworks = [.amex, .masterCard, .visa]
-            request.merchantIdentifier = "merchant.test.payfort.com"
+            request.merchantIdentifier = "merchant.com.amazonpaymentservices.test"
             request.merchantCapabilities = .capability3DS
 
             let paymentPage = PKPaymentAuthorizationViewController(paymentRequest: request)

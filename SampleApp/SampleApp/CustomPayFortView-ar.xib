@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,7 +70,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gs-Dy-Wpg">
                     <rect key="frame" x="0.0" y="117" width="414" height="320"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CARD NUMBER" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ci-r8-Erm">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CARD NUMBER" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ci-r8-Erm" customClass="PFKJVFloatLabeledTextField">
                             <rect key="frame" x="70" y="15" width="314" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="gZk-AQ-k9y"/>
@@ -92,7 +92,7 @@
                             <color key="textColor" red="0.90665903140000004" green="0.1111016858" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EXPIRY DATE" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-VT-Nnv">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EXPIRY DATE" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-VT-Nnv" customClass="PFKJVFloatLabeledTextField">
                             <rect key="frame" x="30" y="55.5" width="140" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="140" id="Ky3-RA-t3f"/>
@@ -114,7 +114,7 @@
                             <color key="textColor" red="0.90665903140000004" green="0.1111016858" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20f-SL-euE">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20f-SL-euE" customClass="PFKJVFloatLabeledTextField">
                             <rect key="frame" x="184" y="55.5" width="200" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="xdA-Ly-vJU"/>
@@ -136,7 +136,7 @@
                             <color key="textColor" red="0.90665903140000004" green="0.1111016858" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CARDHOLDER NAME" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-5E-Nkk">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CARDHOLDER NAME" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-5E-Nkk" customClass="PFKJVFloatLabeledTextField">
                             <rect key="frame" x="30" y="96" width="354" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="QTF-Qz-3zy"/>
@@ -258,27 +258,41 @@
                 <constraint firstAttribute="right" secondItem="O4R-8Y-exa" secondAttribute="right" id="wmd-xP-RGz"/>
             </constraints>
             <connections>
-                <outlet property="BackButton" destination="Dy8-6z-vg3" id="zsJ-Rc-YfC"/>
-                <outlet property="cardImageView" destination="Puy-QG-5ah" id="um8-UH-Mqv"/>
-                <outlet property="cardNumberErrorLabel" destination="IVy-L8-HUO" id="16n-T3-yBU"/>
-                <outlet property="cardNumberTextField" destination="7ci-r8-Erm" id="HeF-jW-sr3"/>
-                <outlet property="cvcNumberErrorLabel" destination="KZA-YK-yJv" id="Ed3-P0-IzE"/>
-                <outlet property="cvcNumberTextField" destination="20f-SL-euE" id="S3A-vY-Rcx"/>
-                <outlet property="expiryDateErrorLabel" destination="eDQ-G3-hgK" id="aNL-WT-3rM"/>
-                <outlet property="expiryDateTextField" destination="RmX-VT-Nnv" id="W2b-ty-qDh"/>
-                <outlet property="headerHeightConstraint" destination="25r-Fg-cd4" id="e7z-br-RuO"/>
-                <outlet property="holderNameTextField" destination="tzA-5E-Nkk" id="8O7-yj-64z"/>
-                <outlet property="payButton" destination="XnZ-SZ-Q5h" id="n4X-Hi-pdG"/>
-                <outlet property="priceLabel" destination="xrZ-38-1fB" id="9ka-S1-sxX"/>
-                <outlet property="saveCardLabel" destination="GnL-hP-8re" id="vzm-p2-SU3"/>
-                <outlet property="saveCardView" destination="dXG-i2-9a4" id="stN-TT-vm2"/>
-                <outlet property="savedCardSwitch" destination="8Ba-VT-IFE" id="oeb-Xt-5mE"/>
-                <outlet property="titleLabel" destination="ecx-Q5-7pf" id="5IJ-hZ-jFN"/>
-                <outlet property="titleView" destination="O4R-8Y-exa" id="Vre-US-83F"/>
+                <outlet property="BackBtn" destination="Dy8-6z-vg3" id="aEj-97-db8"/>
+                <outlet property="CVCNumberTxt" destination="20f-SL-euE" id="ZPT-oz-8Kc"/>
+                <outlet property="CardNameTxt" destination="tzA-5E-Nkk" id="be3-fj-sks"/>
+                <outlet property="CardNumberTxt" destination="7ci-r8-Erm" id="hSm-CN-MSf"/>
+                <outlet property="ExpDateTxt" destination="RmX-VT-Nnv" id="8XX-Z5-9gr"/>
+                <outlet property="PriceLbl" destination="xrZ-38-1fB" id="tzk-RW-MQb"/>
+                <outlet property="SaveCardView" destination="dXG-i2-9a4" id="Gao-Ej-a3c"/>
+                <outlet property="cVCNumberErrorlbl" destination="KZA-YK-yJv" id="H1V-23-jei"/>
+                <outlet property="cardNumberErrorlbl" destination="IVy-L8-HUO" id="KVl-cB-sIp"/>
+                <outlet property="expDateErrorlbl" destination="eDQ-G3-hgK" id="s7x-i6-OZ3"/>
+                <outlet property="headerHeight" destination="25r-Fg-cd4" id="GS9-B7-41s"/>
+                <outlet property="imageCard" destination="Puy-QG-5ah" id="Mks-iv-xf2"/>
+                <outlet property="paymentBtn" destination="XnZ-SZ-Q5h" id="zhe-Bf-xP8"/>
+                <outlet property="saveCardLbl" destination="GnL-hP-8re" id="bls-Nx-TGi"/>
+                <outlet property="savedCardSwitch" destination="8Ba-VT-IFE" id="s9g-Lo-A3B"/>
+                <outlet property="titleLbl" destination="ecx-Q5-7pf" id="pxP-RK-JZA"/>
+                <outlet property="titleView" destination="O4R-8Y-exa" id="HAv-Gu-1gA"/>
             </connections>
             <point key="canvasLocation" x="-130" y="66"/>
         </view>
     </objects>
+    <designables>
+        <designable name="20f-SL-euE">
+            <size key="intrinsicContentSize" width="26.5" height="17"/>
+        </designable>
+        <designable name="7ci-r8-Erm">
+            <size key="intrinsicContentSize" width="99.5" height="17"/>
+        </designable>
+        <designable name="RmX-VT-Nnv">
+            <size key="intrinsicContentSize" width="84.5" height="17"/>
+        </designable>
+        <designable name="tzA-5E-Nkk">
+            <size key="intrinsicContentSize" width="135" height="17"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Arrow" width="128" height="128"/>
     </resources>

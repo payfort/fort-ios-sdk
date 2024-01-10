@@ -9,7 +9,7 @@
 import UIKit
 
 import PayFortSDK
-import MBProgressHUD
+//import MBProgressHUD
 
 class HalfCardViewController: UIViewController {
     
@@ -35,8 +35,8 @@ class HalfCardViewController: UIViewController {
         expiryDateView.errorLabel = expiryDateErrorLabel
         
         let property = Property()
-        property.textColor = .blue
-        property.backgroundColor = .white
+        property.textColor = .yellow
+        property.backgroundColor = .green
         property.errorTextColor = .green
         property.titleTextColor = .black
         
@@ -45,7 +45,7 @@ class HalfCardViewController: UIViewController {
         let builder = PayComponents(cardNumberView: cardNumberView, expiryDateView: expiryDateView, cvcNumberView: cvcNumberView, holderNameView: holderNameView, rememberMe: saveCardSwitch.isOn, language: "en")
         
         payButton.setup(with: request, enviroment: enviroment, payButtonBuilder: builder, viewController: self) {
-            MBProgressHUD.showAdded(to: self.view, animated: true)
+            //MBProgressHUD.showAdded(to: self.view, animated: true)
         } success: { (requestDic, responeDic) in
             print("--success--")
             print("--requestDic--\(requestDic)")
@@ -70,7 +70,7 @@ class HalfCardViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     func hide(response: [String:String]) {
-            MBProgressHUD.hide(for: self.view, animated: true)
+            //MBProgressHUD.hide(for: self.view, animated: true)
         let vc = (self.storyboard?.instantiateViewController(identifier: "ResponsePageViewController"))! as ResponsePageViewController
         vc.request = response
         vc.isFromPresent = true

@@ -4,8 +4,7 @@
 <dict>
 	<key>com.apple.developer.in-app-payments</key>
 	<array>
-		<string>merchant.payfort.com.test</string>
-		<string>merchant.test.payfort.com</string>
+		<string>merchant.com.amazonpaymentservices.test</string>
 	</array>
 </dict>
 </plist>

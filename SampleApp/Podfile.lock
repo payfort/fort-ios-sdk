@@ -1,0 +1,27 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.16)
+  - MBProgressHUD (1.2.0)
+  - PayFortSDK (3.2.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - MBProgressHUD
+  - PayFortSDK (from `/Users/cetozgen/gitprivaterepos/fort-ios-sdk-localtest/`)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  PayFortSDK:
+    :path: "/Users/cetozgen/gitprivaterepos/fort-ios-sdk-localtest/"
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  PayFortSDK: 92d7df56734bd520241250ebc9b93987782b33b9
+
+PODFILE CHECKSUM: 8037295a3735c99e78f5a1b1d37cac6edcee2814
+
+COCOAPODS: 1.14.3
