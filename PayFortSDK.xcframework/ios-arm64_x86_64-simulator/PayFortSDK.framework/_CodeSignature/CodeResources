@@ -6,27 +6,27 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		qp+vgnj2ODjVUCBDJQF01WN5VSk=
+		fwwsfUL8zPOpBvgsSb3y/wSuMrc=
 		</data>
 		<key>CVCNumberView.nib</key>
 		<data>
-		DjyvX53gkW06fUSRkFIseDEKNn0=
+		usKdrmI5ZC89U5z0fQUEM46pQRc=
 		</data>
 		<key>CardNumberView.nib</key>
 		<data>
-		vYmTnU68SNZibMuuD5SCHeO29U4=
+		tqOV1eMs9DKLR1awq92ojoxMdJQ=
 		</data>
 		<key>CustomPayViewController.nib</key>
 		<data>
-		RLJHAzX0KIxEZi/e5r34OuMeFQU=
+		5C56NsXQJsEdZUiNTdfcGfK0Esw=
 		</data>
 		<key>ExpiryDateView.nib</key>
 		<data>
-		GaWJURUNtbwT4q027Eyj7eioo1M=
+		egRRMMaWAL9neJNtQW7X0GRtIpQ=
 		</data>
 		<key>FullScreenLoading.nib</key>
 		<data>
-		dkpJyocLK4Ouv32fYQq1kjg08fI=
+		+x1USppe1sccQm+5D0ayQWLmHxE=
 		</data>
 		<key>Headers/PFKJVFloatLabeledTextField.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/PayFortSDK-Swift.h</key>
 		<data>
-		4r8adSreKoNf5x3ABQ/fYXIGlsw=
+		IuJHnW4or727tK556Ft/14xyVx4=
 		</data>
 		<key>Headers/PayFortSDK.h</key>
 		<data>
@@ -42,83 +42,91 @@
 		</data>
 		<key>HolderNameView.nib</key>
 		<data>
-		BPIwTSmX+xe2WXlkZbGumKiTGYg=
+		j7RNBVwO1hrsxA9M+sSveDOUSAs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8z0GnyNXrnGyE6gQ2yjDdgtA0os=
+		x0eimVf3oxNSN1bJSfcS2zlXpRQ=
 		</data>
 		<key>LoadingView.nib</key>
 		<data>
-		oKMhe/p20Kd+kQgPI41NHhLqbcM=
+		q2HcXJTnwdbBXUAp7L0lBiFsy40=
+		</data>
+		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		EsLpjsKKtvkQq41aibdmQhDjoLQ=
+		</data>
+		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		y2QZb80tYE8kJSFqZqevyvc+UQA=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0Cb7UZ/tHsdA4eD5fYtAuCOXvRI=
+		nynwUHf0KsByVrYscChR6vAJtsM=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nPgne34PMwMUeNfkLmLQ0jEDLHU=
+		y2QZb80tYE8kJSFqZqevyvc+UQA=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ztIf/7nuxX0lOMsHFhyexXy6cGU=
+		oTSh8+3w8vV/1Tf1xnvLXEy63ZM=
 		</data>
-		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0Cb7UZ/tHsdA4eD5fYtAuCOXvRI=
+		EsLpjsKKtvkQq41aibdmQhDjoLQ=
 		</data>
-		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		nPgne34PMwMUeNfkLmLQ0jEDLHU=
-		</data>
-		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		ztIf/7nuxX0lOMsHFhyexXy6cGU=
+		UkrkQDRMOKHehcPRU0nlVZDO7J0=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		I9GViwqtyAKhD8YcckNhJFRWvbY=
+		ePB+IRpRreANozEcoh4zkD7tDI0=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		91hPTf6syIALvgiCznbPz92Busk=
+		UkrkQDRMOKHehcPRU0nlVZDO7J0=
 		</data>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rCVI8DdLH/2lSrYpX6mnZ15QUq8=
-		</data>
-		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		I9GViwqtyAKhD8YcckNhJFRWvbY=
-		</data>
-		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		91hPTf6syIALvgiCznbPz92Busk=
-		</data>
-		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		rCVI8DdLH/2lSrYpX6mnZ15QUq8=
+		yZS3VKtE4O0mf2A84AC3Z7Ju6kA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		wCtfaC8xF00hS6QQDibOpwLVg9M=
+		04TAls3cpM6+f0ApV/bObaOvUd0=
 		</data>
 		<key>PayViewController.nib</key>
 		<data>
-		rQquH0rImmYIv+DdTyRu9/7+QVI=
+		SHee3bD3J9ECBlgrsI7Jwia+XeQ=
 		</data>
 		<key>ResultPage.nib</key>
 		<data>
-		wxxYGtoiGA9TTehiWei3pEn6Tgk=
+		bQiWLLUuFwFPrTP5HMTBRD2Y3oQ=
+		</data>
+		<key>STCPayViewController.nib</key>
+		<data>
+		w/OAoCFdg2ISY7t4MrNnnaZQXtI=
+		</data>
+		<key>StcOtpViewController.nib</key>
+		<data>
+		axbC7w9m+HqQ7Gzg34ih/uaI2bw=
+		</data>
+		<key>StcPhoneStepViewController.nib</key>
+		<data>
+		fncXhpK7Ljb9az6Yq19qqd9iMPE=
+		</data>
+		<key>StcRepeatViewController.nib</key>
+		<data>
+		2kTTSArfsII4a7n0N0ErW+72U/g=
 		</data>
 		<key>ar.strings</key>
 		<data>
-		bd8dYpKOTG8NWbFI/5wxS7ijnHY=
+		rAAPEP5RDcJVSFso4wFsy3tTINE=
 		</data>
 		<key>en.strings</key>
 		<data>
-		SxqGiqQCw1FBht/anUdlr/pNqSc=
+		1/N0F32bWidF6T8Cm85di3tVENM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -127,42 +135,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SO0tgTJu+pwUBMpOFDrSls+rI3utOZDt8+d7CQ70N3k=
+			22tZEbiCsoo7nA0M7bCOASxXLHdifbFZK0iKB2C1YEY=
 			</data>
 		</dict>
 		<key>CVCNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jVr3GfawdilJgIXpjdW9t3SvJ9w0CnfHG2Vgvt004SY=
+			D2WeM6A8TaI437+wOb6jwNWi2zLF6rbhN2Sth/RLJO8=
 			</data>
 		</dict>
 		<key>CardNumberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jkrz1qwxLhrkLOtHV99UqVxad/61r4OPs1LzkG9KdZo=
+			tjf7HITU/8GMkOZhMVCQK7gimdoJbqJlnH4PFv2F2uA=
 			</data>
 		</dict>
 		<key>CustomPayViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5SE2rrqqGBxqtARVcW0IqBxV16bJ5Qto3JJLosaSR+o=
+			XYcDfQ5UqNmRf90oBbesRlMCX5aHLr46SQdr6XbsM50=
 			</data>
 		</dict>
 		<key>ExpiryDateView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BMEUNf9rnmsQWIQMs82ZQIE2Kz9j6DC0di6QgCMGxyQ=
+			a1FeThImfVVS7o6MrU4Itp1U6ZPDEdgt0TSMk/d15O0=
 			</data>
 		</dict>
 		<key>FullScreenLoading.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A3i7YgfEkiIBiJ9MXFXaXfUpT161mBmOQcDXxemFSu0=
+			odeZUpah6Dl7Anqa1bU1NvcjBR12FgX48oFmYVr5KnE=
 			</data>
 		</dict>
 		<key>Headers/PFKJVFloatLabeledTextField.h</key>
@@ -176,7 +184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cRFC11gee02my2P59SPe3kCv6TIC0K66jfOfqCQESrw=
+			J4JtOtuI0gXhjwNpAPq2Hy969poSS4JubY0rvngJzuY=
 			</data>
 		</dict>
 		<key>Headers/PayFortSDK.h</key>
@@ -190,133 +198,147 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0TZ+ecIJ5q7v7ul6sWz9BOKvbBIqgYqq7M2eL4c11IE=
+			PWwVrDNcn3ruVkAG9y5JV6LQujeY2XLVl5tGSGrJCIE=
 			</data>
 		</dict>
 		<key>LoadingView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHAY7oZga/MNW+EZM+0/nRj5VsyPNrU4p+pOJtzlnb0=
+			QOLoPYlVFhk43BZjQA/5lJ0LAze/fBQ76LH9tsLkGHk=
+			</data>
+		</dict>
+		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9enAIMU+LC+5wuFQ+QMhX20sP3RuaGnFTdVUfT2iLfo=
+			</data>
+		</dict>
+		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZydnHxEtv4PK08YG7n3zRO7b2n6KS3BgiAPDf+sMt44=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xjwWHvlREOBQsuyJrsoRs0fPR9Uel/ndMe5RW64+n1w=
+			C1JqWtqOqC6FP/wQ8c94AZ7Yps92NGGA/oHPJG/ccGQ=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oNunHjmiwjPLSFgUAesT2UKcVLfUhap54lxPi1O9MyY=
+			ZydnHxEtv4PK08YG7n3zRO7b2n6KS3BgiAPDf+sMt44=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HHWh/nxtrEL93drElsLQ3C8iAmLAKdQ1doATF+K5z+k=
+			iq9xv3O3FJC05TtHauF/h+zVooSbJxEjJjG7VSLZ8f0=
 			</data>
 		</dict>
-		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xjwWHvlREOBQsuyJrsoRs0fPR9Uel/ndMe5RW64+n1w=
+			9enAIMU+LC+5wuFQ+QMhX20sP3RuaGnFTdVUfT2iLfo=
 			</data>
 		</dict>
-		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oNunHjmiwjPLSFgUAesT2UKcVLfUhap54lxPi1O9MyY=
-			</data>
-		</dict>
-		<key>Modules/PayFortSDK.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HHWh/nxtrEL93drElsLQ3C8iAmLAKdQ1doATF+K5z+k=
+			yMXa3ttF/O/IXB4YRXBpPc1/V0CJHfXT3CrfynKbSzE=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			io0FLywl1xexjt77a9ib8IwfzvbfqKVb6d38CQAIxKc=
+			Cu3GGEiWGwdVLvdxHQFDGJnlnWP8DJx1sYdLTU7Zn+g=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VPE0SdMshahqOC0OvviDTDEfSxSQRU70SNfeF6XoUSc=
+			yMXa3ttF/O/IXB4YRXBpPc1/V0CJHfXT3CrfynKbSzE=
 			</data>
 		</dict>
 		<key>Modules/PayFortSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j3A5kBhjzrHOgIcVigLz07xaz8ut3vUjZjY5Wqh6hjo=
-			</data>
-		</dict>
-		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			io0FLywl1xexjt77a9ib8IwfzvbfqKVb6d38CQAIxKc=
-			</data>
-		</dict>
-		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VPE0SdMshahqOC0OvviDTDEfSxSQRU70SNfeF6XoUSc=
-			</data>
-		</dict>
-		<key>Modules/PayFortSDK.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			j3A5kBhjzrHOgIcVigLz07xaz8ut3vUjZjY5Wqh6hjo=
+			clZBj2I7KBMG98rYCKys/ljeMw8xTwe7Nm8Db/6ONto=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qb9vin7ft1roCosYkrAYN+YrbKVU6kV/ch0ShQ5dzN0=
+			Rq509jmKRry1UDjk97KlDGu9hfqauVO1xT2BPMwr8Dg=
 			</data>
 		</dict>
 		<key>PayViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ff8p1O8/ENqQSKJzFKVb8UMDtHwO7DX0opdl6qQR7c8=
+			3bMjPrFy9jv921D19iYOLFMzKposBHcXdGcCCQugPno=
 			</data>
 		</dict>
 		<key>ResultPage.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wlKP9G/IGeNavY8VAWw60xX6jYCnhhDe2mvUB/KVaE8=
+			CbZtSh0f0p0CUH/ErzLiA5OMeQSsb+iCk0dMZ7CunEE=
+			</data>
+		</dict>
+		<key>STCPayViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uO7vk6RYN24ue9tMjapaZFaJaYg6XRgLYVTalz1PbfM=
+			</data>
+		</dict>
+		<key>StcOtpViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uhSIDFKLjaX0Ry/LJPP01NVid4Uyqn93Nq1SFsWz1g8=
+			</data>
+		</dict>
+		<key>StcPhoneStepViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MimccdbAE9PbPKkuJeOexqOo8luHy+XPNHqyEj++cB4=
+			</data>
+		</dict>
+		<key>StcRepeatViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o68sqtE4SMRzHHoyvapj4BEl7r8Jq6S5XKDUNjbQiCw=
 			</data>
 		</dict>
 		<key>ar.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			50TQGpuLRSmIi3b0LzhnKV13VlfAEad/kaMiOaC6nCM=
+			X4v07++J68pZaiarSHm72UzB9gTCiXPkP7SNDImGwmo=
 			</data>
 		</dict>
 		<key>en.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/bpdwbQtY1UPU3Y+HYrczsKuFVWhkXSC7ivvi/czIvE=
+			MHifX4BMT2/5lm0ps6ZTXcVlOaqM4Ktj0gWas2uP48s=
 			</data>
 		</dict>
 	</dict>
