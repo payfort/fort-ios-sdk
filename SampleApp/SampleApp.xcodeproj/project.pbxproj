@@ -18,14 +18,12 @@
 		009DAC9C25817660008DDB56 /* GlobalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DAC9B25817660008DDB56 /* GlobalClass.swift */; };
 		00C6F7972582E85700F5A837 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6F7962582E85700F5A837 /* MainViewController.swift */; };
 		00C6F7A425839D1200F5A837 /* ExtraParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6F7A325839D1200F5A837 /* ExtraParam.swift */; };
-		00D26A4B2583AC9C00FD0E97 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D26A4A2583AC9C00FD0E97 /* Token.swift */; };
 		00D26A502583B09A00FD0E97 /* ExtraParamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D26A4E2583B09A00FD0E97 /* ExtraParamCell.swift */; };
 		00D26A512583B09A00FD0E97 /* ExtraParamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D26A4F2583B09A00FD0E97 /* ExtraParamCell.xib */; };
 		00D26A542583B6AF00FD0E97 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D26A532583B6AF00FD0E97 /* TableViewDataSource.swift */; };
 		00D26AA425855B0E00FD0E97 /* ApplePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D26AA325855B0E00FD0E97 /* ApplePay.swift */; };
 		00D4AFE225BF76B000AF24A2 /* SelectCustomPaymentTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AFE125BF76B000AF24A2 /* SelectCustomPaymentTypeVC.swift */; };
 		00D4AFE525BF7F4400AF24A2 /* HalfCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AFE425BF7F4400AF24A2 /* HalfCardViewController.swift */; };
-		00F190172594157A0011E124 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F190162594157A0011E124 /* NetworkLogger.swift */; };
 		21FB474D7BB3B429246C85A7 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D050B8F5988CD917DA81FC /* Pods_SampleApp.framework */; };
 		22604575250B9C3B007191B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22604574250B9C3B007191B2 /* AppDelegate.swift */; };
 		22604577250B9C3B007191B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22604576250B9C3B007191B2 /* SceneDelegate.swift */; };
@@ -65,14 +63,12 @@
 		00A8D6E72588014D005D32E2 /* SampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleApp.entitlements; sourceTree = "<group>"; };
 		00C6F7962582E85700F5A837 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		00C6F7A325839D1200F5A837 /* ExtraParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraParam.swift; sourceTree = "<group>"; };
-		00D26A4A2583AC9C00FD0E97 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		00D26A4E2583B09A00FD0E97 /* ExtraParamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraParamCell.swift; sourceTree = "<group>"; };
 		00D26A4F2583B09A00FD0E97 /* ExtraParamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtraParamCell.xib; sourceTree = "<group>"; };
 		00D26A532583B6AF00FD0E97 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		00D26AA325855B0E00FD0E97 /* ApplePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePay.swift; sourceTree = "<group>"; };
 		00D4AFE125BF76B000AF24A2 /* SelectCustomPaymentTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomPaymentTypeVC.swift; sourceTree = "<group>"; };
 		00D4AFE425BF7F4400AF24A2 /* HalfCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfCardViewController.swift; sourceTree = "<group>"; };
-		00F190162594157A0011E124 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		00F5AFAE25EED6C50052F5E1 /* PayFortSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayFortSDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/PayFort-fkplevgculoyxzabulwxjyovvtav/Build/Products/Debug-iphoneos/PayFortSDK.framework"; sourceTree = "<group>"; };
 		04A78A655D8CAC3B2296468A /* Pods-SampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppTests/Pods-SampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		22604571250B9C3B007191B2 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,11 +147,9 @@
 		009DAC9A2581761E008DDB56 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				00F190162594157A0011E124 /* NetworkLogger.swift */,
 				00D26A532583B6AF00FD0E97 /* TableViewDataSource.swift */,
 				009DAC9B25817660008DDB56 /* GlobalClass.swift */,
 				00C6F7A325839D1200F5A837 /* ExtraParam.swift */,
-				00D26A4A2583AC9C00FD0E97 /* Token.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -437,10 +431,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F190172594157A0011E124 /* NetworkLogger.swift in Sources */,
 				009DAC9C25817660008DDB56 /* GlobalClass.swift in Sources */,
 				00D26A502583B09A00FD0E97 /* ExtraParamCell.swift in Sources */,
-				00D26A4B2583AC9C00FD0E97 /* Token.swift in Sources */,
 				003FA85F25B39597005DC6B2 /* ResponsePageViewController.swift in Sources */,
 				22604579250B9C3B007191B2 /* ViewController.swift in Sources */,
 				003FA8C325B4C8C9005DC6B2 /* DirectPayViewController.swift in Sources */,

@@ -21,7 +21,6 @@ class MainViewController: UIViewController {
     
     var enviroment = PayFortEnviroment.sandBox
     var paramsArr = GlobalClass.returnParamsArray()
-    var tokenURL = "https://sbcheckout.payfort.com/FortAPI/paymentApi"
     var fruadParam = GlobalClass.shared.showFraudExtraParam
     
     private var extraParamDataSource: TableViewDataSource<ExtraParamCell, ExtraParam>!
