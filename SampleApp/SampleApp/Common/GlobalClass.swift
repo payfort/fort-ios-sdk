@@ -54,7 +54,7 @@ class GlobalClass: NSObject {
     }
     
     static func setDefualtValueToUserDefaults() {
-        if GlobalClass.returnUserDefaultsValue(key: UserDefaultsKeys.merchantIdentifier.rawValue).isEmpty {
+        if GlobalClass.returnUserDefaultsValue(key: UserDefaultsKeys.countryCode.rawValue).isEmpty {
             GlobalClass.setUserDefaults(key: UserDefaultsKeys.countryCode.rawValue, value: "US")
             GlobalClass.setUserDefaults(key: UserDefaultsKeys.grandTotal.rawValue, value: "1.99")
             GlobalClass.setUserDefaults(key: UserDefaultsKeys.currencyCode.rawValue, value: "USD")
