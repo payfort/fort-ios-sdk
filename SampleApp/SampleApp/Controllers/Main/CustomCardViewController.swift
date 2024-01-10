@@ -9,7 +9,7 @@
 import UIKit
 
 import PayFortSDK
-import MBProgressHUD
+//import MBProgressHUD
 
 class CustomCardViewController: UIViewController {
     
@@ -37,7 +37,7 @@ class CustomCardViewController: UIViewController {
         let builder = PayComponents(cardNumberView: cardNumberView, expiryDateView: expiryDateView, cvcNumberView: cvcNumberView, holderNameView: holderNameView, rememberMe: saveCardSwitch.isOn, language: "ar")
         
         payButton.setup(with: request, enviroment: enviroment, payButtonBuilder: builder, viewController: self) {
-            MBProgressHUD.showAdded(to: self.view, animated: true)
+            //MBProgressHUD.showAdded(to: self.view, animated: true)
         } success: { (requestDic, responeDic) in
             print("--success--")
             print("--requestDic--\(requestDic)")
@@ -58,7 +58,7 @@ class CustomCardViewController: UIViewController {
     }
     
     func hide(response: [String:String]) {
-            MBProgressHUD.hide(for: self.view, animated: true)
+            //MBProgressHUD.hide(for: self.view, animated: true)
             GlobalClass.openResponseViewController(from: self, response: response)
     }
 }

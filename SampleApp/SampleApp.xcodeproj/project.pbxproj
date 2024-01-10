@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		003FA85F25B39597005DC6B2 /* ResponsePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FA85E25B39597005DC6B2 /* ResponsePageViewController.swift */; };
 		003FA8C325B4C8C9005DC6B2 /* DirectPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FA8C225B4C8C9005DC6B2 /* DirectPayViewController.swift */; };
 		0045A44325AD0A9F00349167 /* CustomPayFortView-ar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0045A44225AD0A9F00349167 /* CustomPayFortView-ar.xib */; };
+		0057922F27303F460002F87B /* PayFortSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0057922E27303F460002F87B /* PayFortSDK.framework */; };
 		005F86FD259D236700AA4BA6 /* MainObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005F86FC259D236700AA4BA6 /* MainObjectiveCViewController.m */; };
 		009DAC8825817398008DDB56 /* SdkTokenSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DAC8725817398008DDB56 /* SdkTokenSettingViewController.swift */; };
 		009DAC8B258173B8008DDB56 /* ApplePaySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DAC8A258173B8008DDB56 /* ApplePaySettingViewController.swift */; };
@@ -23,6 +24,7 @@
 		00D26AA425855B0E00FD0E97 /* ApplePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D26AA325855B0E00FD0E97 /* ApplePay.swift */; };
 		00D4AFE225BF76B000AF24A2 /* SelectCustomPaymentTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AFE125BF76B000AF24A2 /* SelectCustomPaymentTypeVC.swift */; };
 		00D4AFE525BF7F4400AF24A2 /* HalfCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4AFE425BF7F4400AF24A2 /* HalfCardViewController.swift */; };
+		21FB474D7BB3B429246C85A7 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D050B8F5988CD917DA81FC /* Pods_SampleApp.framework */; };
 		22604575250B9C3B007191B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22604574250B9C3B007191B2 /* AppDelegate.swift */; };
 		22604577250B9C3B007191B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22604576250B9C3B007191B2 /* SceneDelegate.swift */; };
 		22604579250B9C3B007191B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22604578250B9C3B007191B2 /* ViewController.swift */; };
@@ -32,8 +34,8 @@
 		2260458C250B9C3E007191B2 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260458B250B9C3E007191B2 /* SampleAppTests.swift */; };
 		229C092F259003C200AD4D6C /* CustomCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C092E259003C200AD4D6C /* CustomCardViewController.swift */; };
 		22B65C15259E5B1E00CB9461 /* CustomPayFortView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B65C14259E5B1E00CB9461 /* CustomPayFortView.xib */; };
-		E5659044CAF8CCDACF785F9E /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D95E90D6781C93B8CE28AB2 /* Pods_SampleApp.framework */; };
-		F1EA387BDEDF12FBD15EB06F /* Pods_SampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41169C7757B46E41E7FC18D0 /* Pods_SampleAppTests.framework */; };
+		3D5DB79E29C078C800A37AF4 /* STCPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DB79D29C078C800A37AF4 /* STCPay.swift */; };
+		E9EA08336BFB26AFD4DA5F3D /* Pods_SampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA304BC230189E8B98A3BD50 /* Pods_SampleAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +52,10 @@
 		003FA85E25B39597005DC6B2 /* ResponsePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePageViewController.swift; sourceTree = "<group>"; };
 		003FA8C225B4C8C9005DC6B2 /* DirectPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectPayViewController.swift; sourceTree = "<group>"; };
 		0045A44225AD0A9F00349167 /* CustomPayFortView-ar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CustomPayFortView-ar.xib"; sourceTree = "<group>"; };
+		0057922E27303F460002F87B /* PayFortSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PayFortSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		005F86FA259D236600AA4BA6 /* SampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		005F86FB259D236700AA4BA6 /* MainObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainObjectiveCViewController.h; sourceTree = "<group>"; };
 		005F86FC259D236700AA4BA6 /* MainObjectiveCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainObjectiveCViewController.m; sourceTree = "<group>"; };
-		009515B7823CB5E74B8630A4 /* Pods-SampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleAppTests/Pods-SampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		009DAC8725817398008DDB56 /* SdkTokenSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SdkTokenSettingViewController.swift; sourceTree = "<group>"; };
 		009DAC8A258173B8008DDB56 /* ApplePaySettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePaySettingViewController.swift; sourceTree = "<group>"; };
 		009DAC8D2581744F008DDB56 /* PaymentSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSettingsViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		00D4AFE125BF76B000AF24A2 /* SelectCustomPaymentTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomPaymentTypeVC.swift; sourceTree = "<group>"; };
 		00D4AFE425BF7F4400AF24A2 /* HalfCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfCardViewController.swift; sourceTree = "<group>"; };
 		00F5AFAE25EED6C50052F5E1 /* PayFortSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayFortSDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/PayFort-fkplevgculoyxzabulwxjyovvtav/Build/Products/Debug-iphoneos/PayFortSDK.framework"; sourceTree = "<group>"; };
+		04A78A655D8CAC3B2296468A /* Pods-SampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppTests/Pods-SampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		22604571250B9C3B007191B2 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22604574250B9C3B007191B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22604576250B9C3B007191B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,11 +84,13 @@
 		2260458D250B9C3E007191B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229C092E259003C200AD4D6C /* CustomCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardViewController.swift; sourceTree = "<group>"; };
 		22B65C14259E5B1E00CB9461 /* CustomPayFortView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPayFortView.xib; sourceTree = "<group>"; };
-		41169C7757B46E41E7FC18D0 /* Pods_SampleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D95E90D6781C93B8CE28AB2 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFC44BFD57D28CBC2F085C47 /* Pods-SampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppTests/Pods-SampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D8144A67B1D6BBB1B788C210 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		F045F1B4C677A3DB7B2AC9A8 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3D4AD49D2B4EBF3100BD434C /* PayFortSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PayFortSDK.xcframework; path = ../PayFortSDK.xcframework; sourceTree = "<group>"; };
+		3D5DB79D29C078C800A37AF4 /* STCPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCPay.swift; sourceTree = "<group>"; };
+		68D050B8F5988CD917DA81FC /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA304BC230189E8B98A3BD50 /* Pods_SampleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2462AF21F7FA79C71D72C2 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		E55F1D1E43F306C70129664F /* Pods-SampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleAppTests/Pods-SampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F00718E6A7698358B504E799 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5659044CAF8CCDACF785F9E /* Pods_SampleApp.framework in Frameworks */,
+				0057922F27303F460002F87B /* PayFortSDK.framework in Frameworks */,
+				21FB474D7BB3B429246C85A7 /* Pods_SampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1EA387BDEDF12FBD15EB06F /* Pods_SampleAppTests.framework in Frameworks */,
+				E9EA08336BFB26AFD4DA5F3D /* Pods_SampleAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +165,7 @@
 				003FA85E25B39597005DC6B2 /* ResponsePageViewController.swift */,
 				003FA8C225B4C8C9005DC6B2 /* DirectPayViewController.swift */,
 				00D4AFE125BF76B000AF24A2 /* SelectCustomPaymentTypeVC.swift */,
+				3D5DB79D29C078C800A37AF4 /* STCPay.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -187,7 +194,7 @@
 				22604572250B9C3B007191B2 /* Products */,
 				9932490B951DB273F2FDAB2D /* Frameworks */,
 				00F18FFE2592844F0011E124 /* Recovered References */,
-				EF217F0A7CF2C3312CAD0230 /* Pods */,
+				67E7B1F47160DE42D1488394 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,25 +235,27 @@
 			path = SampleAppTests;
 			sourceTree = "<group>";
 		};
+		67E7B1F47160DE42D1488394 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F00718E6A7698358B504E799 /* Pods-SampleApp.debug.xcconfig */,
+				CA2462AF21F7FA79C71D72C2 /* Pods-SampleApp.release.xcconfig */,
+				04A78A655D8CAC3B2296468A /* Pods-SampleAppTests.debug.xcconfig */,
+				E55F1D1E43F306C70129664F /* Pods-SampleAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9932490B951DB273F2FDAB2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				00F5AFAE25EED6C50052F5E1 /* PayFortSDK.framework */,
-				5D95E90D6781C93B8CE28AB2 /* Pods_SampleApp.framework */,
-				41169C7757B46E41E7FC18D0 /* Pods_SampleAppTests.framework */,
+				3D4AD49D2B4EBF3100BD434C /* PayFortSDK.xcframework */,
+				0057922E27303F460002F87B /* PayFortSDK.framework */,
+				68D050B8F5988CD917DA81FC /* Pods_SampleApp.framework */,
+				BA304BC230189E8B98A3BD50 /* Pods_SampleAppTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EF217F0A7CF2C3312CAD0230 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F045F1B4C677A3DB7B2AC9A8 /* Pods-SampleApp.debug.xcconfig */,
-				D8144A67B1D6BBB1B788C210 /* Pods-SampleApp.release.xcconfig */,
-				CFC44BFD57D28CBC2F085C47 /* Pods-SampleAppTests.debug.xcconfig */,
-				009515B7823CB5E74B8630A4 /* Pods-SampleAppTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,11 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22604590250B9C3E007191B2 /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
-				73D78CBA76A65BD44D469490 /* [CP] Check Pods Manifest.lock */,
+				EDE268F19F25673CC569279F /* [CP] Check Pods Manifest.lock */,
 				2260456D250B9C3B007191B2 /* Sources */,
 				2260456E250B9C3B007191B2 /* Frameworks */,
 				2260456F250B9C3B007191B2 /* Resources */,
-				F3F96784708CB0481C658CA1 /* [CP] Embed Pods Frameworks */,
+				1423BC9323D235EB992B9E4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,7 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22604593250B9C3E007191B2 /* Build configuration list for PBXNativeTarget "SampleAppTests" */;
 			buildPhases = (
-				7D7B0AD8E1DA565A108D1174 /* [CP] Check Pods Manifest.lock */,
+				982A863D51C797E600EBD757 /* [CP] Check Pods Manifest.lock */,
 				22604583250B9C3E007191B2 /* Sources */,
 				22604584250B9C3E007191B2 /* Frameworks */,
 				22604585250B9C3E007191B2 /* Resources */,
@@ -296,8 +305,9 @@
 		22604569250B9C3B007191B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = PayFort;
 				TargetAttributes = {
 					22604570250B9C3B007191B2 = {
@@ -353,29 +363,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		73D78CBA76A65BD44D469490 /* [CP] Check Pods Manifest.lock */ = {
+		1423BC9323D235EB992B9E4A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SampleApp-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7D7B0AD8E1DA565A108D1174 /* [CP] Check Pods Manifest.lock */ = {
+		982A863D51C797E600EBD757 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,21 +402,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3F96784708CB0481C658CA1 /* [CP] Embed Pods Frameworks */ = {
+		EDE268F19F25673CC569279F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -434,6 +444,7 @@
 				009DAC8825817398008DDB56 /* SdkTokenSettingViewController.swift in Sources */,
 				22604575250B9C3B007191B2 /* AppDelegate.swift in Sources */,
 				005F86FD259D236700AA4BA6 /* MainObjectiveCViewController.m in Sources */,
+				3D5DB79E29C078C800A37AF4 /* STCPay.swift in Sources */,
 				22604577250B9C3B007191B2 /* SceneDelegate.swift in Sources */,
 				00C6F7972582E85700F5A837 /* MainViewController.swift in Sources */,
 				00D4AFE225BF76B000AF24A2 /* SelectCustomPaymentTypeVC.swift in Sources */,
@@ -506,6 +517,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -516,6 +528,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -566,6 +579,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -576,6 +590,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -596,7 +611,7 @@
 		};
 		22604591250B9C3E007191B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F045F1B4C677A3DB7B2AC9A8 /* Pods-SampleApp.debug.xcconfig */;
+			baseConfigurationReference = F00718E6A7698358B504E799 /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
@@ -604,7 +619,7 @@
 				CODE_SIGN_ENTITLEMENTS = SampleApp/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7KLC3DMM55;
+				DEVELOPMENT_TEAM = 2YP9LJHD24;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -614,7 +629,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.payfort.test.applepay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payfort.test.stcpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SampleApp/Controllers/Objective C/SampleApp-Bridging-Header.h";
@@ -626,7 +641,7 @@
 		};
 		22604592250B9C3E007191B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8144A67B1D6BBB1B788C210 /* Pods-SampleApp.release.xcconfig */;
+			baseConfigurationReference = CA2462AF21F7FA79C71D72C2 /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
@@ -634,7 +649,7 @@
 				CODE_SIGN_ENTITLEMENTS = SampleApp/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7KLC3DMM55;
+				DEVELOPMENT_TEAM = 2YP9LJHD24;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -644,7 +659,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.payfort.test.applepay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payfort.test.stcpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SampleApp/Controllers/Objective C/SampleApp-Bridging-Header.h";
@@ -655,7 +670,7 @@
 		};
 		22604594250B9C3E007191B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFC44BFD57D28CBC2F085C47 /* Pods-SampleAppTests.debug.xcconfig */;
+			baseConfigurationReference = 04A78A655D8CAC3B2296468A /* Pods-SampleAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -678,7 +693,7 @@
 		};
 		22604595250B9C3E007191B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 009515B7823CB5E74B8630A4 /* Pods-SampleAppTests.release.xcconfig */;
+			baseConfigurationReference = E55F1D1E43F306C70129664F /* Pods-SampleAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

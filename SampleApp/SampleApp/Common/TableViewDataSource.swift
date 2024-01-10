@@ -32,7 +32,7 @@ class TableViewDataSource<CellType, Model>: NSObject, UITableViewDataSource wher
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdenitfier, for: indexPath) as? CellType else {
-            fatalError("cell not found")
+            fatalError("weather cell not found")
         }
         
         let vm = items[indexPath.row]

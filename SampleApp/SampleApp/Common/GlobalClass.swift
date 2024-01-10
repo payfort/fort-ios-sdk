@@ -18,7 +18,6 @@ enum UserDefaultsKeys: String, CaseIterable {
     case countryCode
     case grandTotal
     case currencyCode
-    
 }
 
 class GlobalClass: NSObject {
@@ -61,8 +60,7 @@ class GlobalClass: NSObject {
             GlobalClass.setUserDefaults(key: UserDefaultsKeys.currencyCode.rawValue, value: "USD")
         }
     }
-
-
+    
     static func returnParamsArray() -> [ExtraParam] {
         var arr : [ExtraParam] = []
         

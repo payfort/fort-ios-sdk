@@ -15,12 +15,12 @@ class MainViewController: UIViewController {
     @IBOutlet weak private var tableView: UITableView!
     
     var payFortController = PayFortController.init(enviroment: .sandBox)
-    
+    var stcController = STCPayViewController.init(enviroment: .sandBox)
+
     // MARK: - Properties
     
     var enviroment = PayFortEnviroment.sandBox
     var paramsArr = GlobalClass.returnParamsArray()
-    
     var fruadParam = GlobalClass.shared.showFraudExtraParam
     
     private var extraParamDataSource: TableViewDataSource<ExtraParamCell, ExtraParam>!
@@ -40,10 +40,6 @@ class MainViewController: UIViewController {
         }
     }
     
-    @IBAction func copyUUID(_ sender: Any) {
-        UIPasteboard.general.string = payFortController.getUDID()
-    }
-    
     private func setupTableView() {
         
         
@@ -59,6 +55,12 @@ class MainViewController: UIViewController {
         
     }
     
+    @IBAction private func createTokenAction(_ sender: Any) {
+        
+        UIPasteboard.general.string = payFortController.getUDID()
+        print(payFortController.getUDID())
+        
+    }
     
     @IBAction func enviromentValueChanged(_ sender: UISegmentedControl) {
         
@@ -74,6 +76,7 @@ class MainViewController: UIViewController {
         }
         
         payFortController = PayFortController.init(enviroment: enviroment)
+        stcController = STCPayViewController.init(enviroment: enviroment)
     }
     
     @IBAction func commandValueChanged(_ sender: UISegmentedControl) {
@@ -102,6 +105,8 @@ class MainViewController: UIViewController {
         }else {
             payFortController.setPayFortCustomViewNib("")
         }
+        print(extractExtraParam())
+        return
         payFortController.callPayFort(withRequest: extractExtraParam(),
                                                  currentViewController: self) { (requestDic, responeDic) in
             print("--success--")
@@ -123,15 +128,6 @@ class MainViewController: UIViewController {
             GlobalClass.openResponseViewController(from: self, response: responeDic)
 
         }
-
-//        payFortController.callPayFortWithRequest(extractExtraParam(), currentViewController: self) { result in
-//            switch result {
-//            case .failure(let error):
-//                print("--error-->\(error.errorDescription)")
-//            case .success: break
-//
-//            }
-//        }
         
     }
 

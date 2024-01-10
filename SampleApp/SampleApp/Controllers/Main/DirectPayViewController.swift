@@ -8,7 +8,7 @@
 
 import UIKit
 import PayFortSDK
-import MBProgressHUD
+//import MBProgressHUD
 
 class DirectPayViewController: UIViewController {
 
@@ -26,7 +26,7 @@ class DirectPayViewController: UIViewController {
         super.viewDidLoad()
 
         directPayButton.setup(with: request, enviroment: enviroment, viewController: self) {
-            MBProgressHUD.showAdded(to: self.view, animated: true)
+            //MBProgressHUD.showAdded(to: self.view, animated: true)
         } success: { (requestDic, responeDic) in
             print("--success--")
             print("--requestDic--\(requestDic)")
@@ -43,9 +43,30 @@ class DirectPayViewController: UIViewController {
     
     
     func hide(response: [String:String]) {
-            MBProgressHUD.hide(for: self.view, animated: true)
+            //MBProgressHUD.hide(for: self.view, animated: true)
             GlobalClass.openResponseViewController(from: self, response: response)
     }
 
+    @IBAction func validateButtonTapped(_ sender: Any) {
+        
+        payFortController.callValidateAPI(with: request) {
+            print("--ShowLoader--")
+            //MBProgressHUD.showAdded(to: self.view, animated: true)
+
+        } success: { (requestDic) in
+            print("--success--")
+            print("--requestDic--\(requestDic)")
+            self.hide(response: ["status":"success"])
+
+        } faild: { (requestDic, responeDic, message) in
+            print("--Faild--")
+            print("--requestDic--\(requestDic)")
+            print("--responeDic--\(responeDic)")
+            print("--message--\(message)")
+            self.hide(response: responeDic)
+
+        }
+        
+    }
     
 }
