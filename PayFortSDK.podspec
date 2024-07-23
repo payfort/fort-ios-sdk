@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = 'PayFortSDK'
-    s.version           = '3.2.0'
+    s.version           = '3.2.1'
     s.summary           = 'The Amazon Payment Services IOS SDK allows Merchants to securely integrate the payment functions and easily accept In-App payments.Instead of the traditional, time-consuming, and complex way of being redirected to the mobile browser to complete the payment, In-App payments can be completed through our APS Mobile SDK. In turn, this gives the Merchant’s consumers a smooth, pleasing user-experience by using In-App payment functions through the native applications.'
     s.homepage          = 'https://github.com/payfort/fort-ios-sdk'
 
