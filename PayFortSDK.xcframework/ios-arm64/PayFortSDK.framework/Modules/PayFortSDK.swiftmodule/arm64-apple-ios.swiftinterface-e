@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayFortSDK
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios12.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayFortSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CommonCrypto
 import DeveloperToolsSupport
 import Foundation
@@ -15,29 +16,31 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PayFortView : UIKit.UIView {
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var CardNumberTxt: PayFortSDK.PFKJVFloatLabeledTextField!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cardNumberErrorlbl: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var CardNameTxt: PayFortSDK.PFKJVFloatLabeledTextField!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var CVCNumberTxt: PayFortSDK.PFKJVFloatLabeledTextField!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cVCNumberErrorlbl: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var ExpDateTxt: PayFortSDK.PFKJVFloatLabeledTextField!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var expDateErrorlbl: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var titleView: UIKit.UIView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var titleLbl: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var BackBtn: UIKit.UIButton!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var headerHeight: UIKit.NSLayoutConstraint!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var PriceLbl: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var savedCardSwitch: UIKit.UISwitch!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var saveCardLbl: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var imageCard: UIKit.UIImageView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var SaveCardView: UIKit.UIView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var paymentBtn: UIKit.UIButton!
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PayFortView : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var CardNumberTxt: PayFortSDK.PFKJVFloatLabeledTextField!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var cardNumberErrorlbl: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var CardNameTxt: PayFortSDK.PFKJVFloatLabeledTextField!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var CVCNumberTxt: PayFortSDK.PFKJVFloatLabeledTextField!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var cVCNumberErrorlbl: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var ExpDateTxt: PayFortSDK.PFKJVFloatLabeledTextField!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var expDateErrorlbl: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var titleView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var titleLbl: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var BackBtn: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var headerHeight: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var PriceLbl: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var savedCardSwitch: UIKit.UISwitch!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var saveCardLbl: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var imageCard: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var SaveCardView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var paymentBtn: UIKit.UIButton!
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ExpiryDateView : PayFortSDK.CardContainer {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ExpiryDateView : PayFortSDK.CardContainer {
   @objc deinit
 }
 public enum PayFortError : Swift.Error {
@@ -86,36 +89,39 @@ public typealias showLoading = () -> Swift.Void
 public typealias loadingStatus = (_ show: Swift.Bool) -> Swift.Void
 public typealias transactionCanceled = (_ requestDic: [Swift.String : Swift.String], _ responeDic: [Swift.String : Swift.String]) -> Swift.Void
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class HolderNameView : PayFortSDK.CardContainer {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class HolderNameView : PayFortSDK.CardContainer {
   @objc deinit
 }
 public typealias ErrorData = (code: Swift.Int, message: Swift.String)
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PayButton : UIKit.UIButton {
-  @objc @_Concurrency.MainActor(unsafe) public func setup(with request: [Swift.String : Swift.String], enviroment: PayFortSDK.PayFortEnviroment, payButtonBuilder: PayFortSDK.PayComponents, viewController: UIKit.UIViewController, showLoading: @escaping PayFortSDK.showLoading, success: @escaping PayFortSDK.transactionSuccess, faild: @escaping PayFortSDK.transactionFaild)
-  @objc @_Concurrency.MainActor(unsafe) public func setup(with request: [Swift.String : Swift.String], enviroment: PayFortSDK.PayFortEnviroment, viewController: UIKit.UIViewController, showLoading: @escaping PayFortSDK.showLoading, success: @escaping PayFortSDK.transactionSuccess, faild: @escaping PayFortSDK.transactionFaild)
-  @objc @_Concurrency.MainActor(unsafe) public func updateRequest(request: [Swift.String : Swift.String])
-  @objc @_Concurrency.MainActor(unsafe) public func isRememberEnabled(_ enabled: Swift.Bool)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class PayButton : UIKit.UIButton {
+  @objc @_Concurrency.MainActor @preconcurrency public func setup(with request: [Swift.String : Swift.String], enviroment: PayFortSDK.PayFortEnviroment, payButtonBuilder: PayFortSDK.PayComponents, viewController: UIKit.UIViewController, showLoading: @escaping PayFortSDK.showLoading, success: @escaping PayFortSDK.transactionSuccess, faild: @escaping PayFortSDK.transactionFaild)
+  @objc @_Concurrency.MainActor @preconcurrency public func setup(with request: [Swift.String : Swift.String], enviroment: PayFortSDK.PayFortEnviroment, viewController: UIKit.UIViewController, showLoading: @escaping PayFortSDK.showLoading, success: @escaping PayFortSDK.transactionSuccess, faild: @escaping PayFortSDK.transactionFaild)
+  @objc @_Concurrency.MainActor @preconcurrency public func updateRequest(request: [Swift.String : Swift.String])
+  @objc @_Concurrency.MainActor @preconcurrency public func isRememberEnabled(_ enabled: Swift.Bool)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardContainer : UIKit.UIView {
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var errorLabel: UIKit.UILabel! {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CardContainer : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var errorLabel: UIKit.UILabel! {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) public var property: PayFortSDK.Property {
+  @_Concurrency.MainActor @preconcurrency public var property: PayFortSDK.Property {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func updateProperties()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 extension PayFortSDK.CardContainer : UIKit.UITextFieldDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField, reason: UIKit.UITextField.DidEndEditingReason)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField, reason: UIKit.UITextField.DidEndEditingReason)
 }
 @objc public class PayComponents : ObjectiveC.NSObject {
   public init(cardNumberView: PayFortSDK.CardNumberView, expiryDateView: PayFortSDK.ExpiryDateView, cvcNumberView: PayFortSDK.CVCNumberView, holderNameView: PayFortSDK.HolderNameView, rememberMe: Swift.Bool, language: Swift.String)
@@ -133,10 +139,10 @@ public enum STCError : Swift.Error {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardNumberView : PayFortSDK.CardContainer {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CardNumberView : PayFortSDK.CardContainer {
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CVCNumberView : PayFortSDK.CardContainer {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CVCNumberView : PayFortSDK.CardContainer {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers final public class Property : ObjectiveC.NSObject {
@@ -153,33 +159,37 @@ public enum STCError : Swift.Error {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class STCPayViewController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor(unsafe) public init(enviroment: PayFortSDK.PayFortEnviroment, showResponsePage: Swift.Bool = false, hideLoading: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @objc @_Concurrency.MainActor(unsafe) public func openPaymentPage(with request: [Swift.String : Swift.String], currentViewController: UIKit.UIViewController, success: @escaping PayFortSDK.transactionSuccess, faild: @escaping PayFortSDK.transactionFaild, canceled: @escaping PayFortSDK.transactionCanceled)
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class STCPayViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor @preconcurrency public init(enviroment: PayFortSDK.PayFortEnviroment, showResponsePage: Swift.Bool = false, hideLoading: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @objc @_Concurrency.MainActor @preconcurrency public func openPaymentPage(with request: [Swift.String : Swift.String], currentViewController: UIKit.UIViewController, success: @escaping PayFortSDK.transactionSuccess, faild: @escaping PayFortSDK.transactionFaild, canceled: @escaping PayFortSDK.transactionCanceled)
   @objc deinit
 }
 @objc public enum PayFortEnviroment : Swift.Int {
   case sandBox
   case production
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@objc @_Concurrency.MainActor(unsafe) open class PayFortController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor(unsafe) public var isShowResponsePage: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public var hideLoading: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public var presentAsDefault: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public init(enviroment: PayFortSDK.PayFortEnviroment)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
-  @objc @_Concurrency.MainActor(unsafe) public func getUDID() -> Swift.String
-  @objc @_Concurrency.MainActor(unsafe) public func callValidateAPI(with request: [Swift.String : Swift.String], showLoading: @escaping PayFortSDK.showLoading, success: @escaping PayFortSDK.validateSuccess, faild: @escaping PayFortSDK.transactionFaild)
-  @objc @_Concurrency.MainActor(unsafe) public func callPayFort(withRequest: [Swift.String : Swift.String], currentViewController: UIKit.UIViewController, success: @escaping PayFortSDK.transactionSuccess, canceled: @escaping PayFortSDK.transactionCanceled, faild: @escaping PayFortSDK.transactionFaild)
-  @objc @_Concurrency.MainActor(unsafe) public func callPayFortForApplePay(withRequest: [Swift.String : Swift.String], applePayPayment: PassKit.PKPayment, currentViewController: UIKit.UIViewController, success: @escaping PayFortSDK.transactionSuccess, faild: @escaping PayFortSDK.transactionFaild)
-  @objc @_Concurrency.MainActor(unsafe) public func setPayFortCustomViewNib(_ viewNib: Swift.String)
+@objc @_Concurrency.MainActor @preconcurrency open class PayFortController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor @preconcurrency public var isShowResponsePage: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency public var hideLoading: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency public var presentAsDefault: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency public init(enviroment: PayFortSDK.PayFortEnviroment)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @objc @_Concurrency.MainActor @preconcurrency public func getUDID() -> Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public func callValidateAPI(with request: [Swift.String : Swift.String], showLoading: @escaping PayFortSDK.showLoading, success: @escaping PayFortSDK.validateSuccess, faild: @escaping PayFortSDK.transactionFaild)
+  @objc @_Concurrency.MainActor @preconcurrency public func callPayFort(withRequest: [Swift.String : Swift.String], currentViewController: UIKit.UIViewController, success: @escaping PayFortSDK.transactionSuccess, canceled: @escaping PayFortSDK.transactionCanceled, faild: @escaping PayFortSDK.transactionFaild)
+  @objc @_Concurrency.MainActor @preconcurrency public func callPayFortForApplePay(withRequest: [Swift.String : Swift.String], applePayPayment: PassKit.PKPayment, currentViewController: UIKit.UIViewController, success: @escaping PayFortSDK.transactionSuccess, faild: @escaping PayFortSDK.transactionFaild)
+  @objc @_Concurrency.MainActor @preconcurrency public func setPayFortCustomViewNib(_ viewNib: Swift.String)
   @objc deinit
 }
 public struct ValidateResponse : Swift.Decodable {
